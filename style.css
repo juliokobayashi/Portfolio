@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .navbar {
+    background-color: rgba(0, 0, 0, 0); /* Fundo translúcido */
+    color: #ffffff;
+    display: flex;
+    justify-content: flex-end; /* Alinha os botões à direita */
+    right: 0; /* Posiciona a barra no lado direito */
+    gap: 10px; /* Define a distância entre os botões */
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    }
+  
+    .navbar a {
+      color: #000000;
+      text-decoration: none;
+      font-size: 18px;
+      margin-right: 20px;
+      padding: 10px; /* Aumenta a área clicável dos links */
+      transition: color 0.3s ease;
+  }
+  .navbar a:hover {
+      color: #CCCCCC;
+  }
+
+
+  .logo {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ddd;
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  section {
+    padding: 5rem 1rem;
+    max-width: 800px;
+    margin: 5rem auto;
+    text-align: center;
+  }
+  
+
+
+
+
+  /* footer */
+
+  .footer {
+    background-color: #f7f4ed;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .footer .social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+  }
+  
+  .footer .email a img {
+    width: 40px;
+    height: 30px;
+    transition: transform 0.3s;
+  }
+  .footer .social-icons a img:hover {
+    transform: scale(1.1);
+  }
+    .footer .email a img:hover {
+    transform: scale(1.1);
+  }
+  .footer p {
+    color: #333;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+
+
+
+
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
